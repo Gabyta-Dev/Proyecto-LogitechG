@@ -14,7 +14,7 @@
   <body>
     <header>
           <!--BARRA DE NAVEGACION-->
-          <nav class="navbar navbar-expand-lg">
+          <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
@@ -43,8 +43,8 @@
                   </li>
                 </ul>
                 <span class="navbar-text">
-                  <a href="#"><i class="fa-solid fa-user"></i>Cuenta</a>
-                  <a href="./pages/compra.html"><i class="fa-solid fa-cart-shopping"></i>Mi Carrito</a>
+                  <a href="./pages/cuenta.html"><i class="fa-solid fa-user"></i>Cuenta</a>
+                  <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i>Mi Carrito</a>
                 </span>
               </div>
             </div>
@@ -53,39 +53,40 @@
     <main>
         <section class="main_section">
           <img src="./imagenes/logo/OIP-sinfondo.png" alt="logoLogitechG">
+          <p>Tecnología de iluminación sincronizada que te sumerge en la acción con efectos determinados por el juego y otras cosas.</p>
           </section>
           <!--CARD-->
           <section class="main_section_card">
           <div class="card-group w-100 m-auto">
-            <div class="card m-3 border-0 bg-black text-light" >
-              <img src="./imagenes/g502x-hpb-tablet-1152.webp" class="card-img-top " alt="...">
+            <div class="card m-3 border-0  text-black" >
+              <img src="./imagenes/tecl.png" class="card-img-top " alt="logitechG">
               <div class="card-body m-0">
                 <h5 class="card-title ">UN ICONO. RENOVADO.</h5>
-                <p class="card-text  text-light">El diseño del legendario G502 renovado con tecnología para juegos pionera.</p>
-                <p><a href="./pages/teclados.html" class="link-underline-primary">PRESENTAMOS LA GAMA G502 X ...</a></p>
+                <p class="card-text  text-black">El diseño del legendario G502 renovado con tecnología para juegos pionera.</p>
+                <p><a href="./pages/teclados.html" class="link text-info">PRESENTAMOS LA GAMA G502 X ...</a></p>
               </div>
             </div>
-            <div class="card m-3 border-0 bg-black text-light">
-              <img src="./imagenes/feature-tile-pro-x-wireless.webp" class="card-img-top" alt="tecladosJuegos">
+            <div class="card m-3 border-0 text-black">
+              <img src="./imagenes/g502x-hpb-tablet-1152.webp" class="card-img-top" alt="tecladosJuegos">
               <div class="card-body">
                 <h5 class="card-title">SIN OPOSICIÓN</h5>
-                <p class="card-text  text-light">El arma preferida de los mejores jugadores de esports del mundo.</p>
-                <p><a href="./pages/mouse.html" class="link-underline-primary">PRESENTAMOS PRO X SUPERLIGHT...</a></p>
+                <p class="card-text  text-black">El arma preferida de los mejores jugadores de esports del mundo.</p>
+                <p><a href="./pages/ratones.html" class="llink text-info">PRESENTAMOS PRO X SUPERLIGHT...</a></p>
               </div>
             </div>
-            <div class="card m-3 border-0 bg-black text-light">
+            <div class="card m-3 border-0 text-black">
               <img src="./imagenes/fits-wireless-earbuds-feature.webp" class="card-img-top" alt="gaming">
               <div class="card-body">
                 <h5 class="card-title">AJUSTE PERFECTO PARA JUGAR</h5>
-                <p class="card-text  text-light">Audífonos inalámbricos para juegos que se amoldan para ajustarse a tus oídos.</p>
-                <p><a href="./pages/audio.html" class="link-underline-primary">PRESENTAMOS G FITS...</a></p>
+                <p class="card-text text-black">Audífonos inalámbricos para juegos que se amoldan para ajustarse a tus oídos.</p>
+                <p><a href="./pages/audio.html" class="link text-info">PRESENTAMOS G FITS...</a></p>
               </div>
             </div>
           </div>
         </section>
         <section class="main_section_cardDos">
-          <div class="card text-center bg-black text-light ">
-            <div class="card-header pt-5 fs-1">
+          <div class="card text-center bg-transparent text-light border-0">
+            <div class="card-header pt-5 fs-1 border-0">
               EQUIPO PARA JUEGOS AVANZADO
             </div>
             <div class="card-body pt-5">
@@ -95,12 +96,12 @@
           <!-- CARDS------------------------------->
         <div class="main_container">
           <div class="container_card">
-            <img src="./imagenes/ratones/g502/g502-lsp-feature-1-desktop.webp" alt="mouse">
-            <a href="./pages/mouse.html"><h3>Mouse</h3></a>
+            <img src="./imagenes/ratones/portadaAudio.webp" alt="mouse">
+              <a href="./pages/ratones.html"><h3>Mouse</h3></a>
           </div>
           <div class="container_card">
             <img src="./imagenes/teclados/g213/g213-feature-1-nb.png" alt="teclados">
-            <a href="./pages/teclados.html"><h3>Teclados</h3></a>
+              <a href="./pages/teclados.html"><h3>Teclados</h3></a>
           </div>
           <div class="container_card">
             <img src="./imagenes/home-3-desktop.webp" alt="audio">
@@ -108,8 +109,7 @@
           </div>
           <div class="container_card">
             <img src="./imagenes/nwnl-setup-desktop.webp" alt="escritorioPc">
-            <a href="./pages/mobiliario.html"><h3>Mobiliario</h3></a>
-          </div>
+              <a href="./pages/mobiliario.html"><h3>Mobiliario</h3></a></div>
         </div>
         </section>
         <section class="main_seccionTres">
@@ -118,16 +118,15 @@
                 <img src="./imagenes/feature-1-desktop.webp" alt="juegos">
                 <!--CAPA OVERLAY EN LA IMAGEN-->
                 <div class="capa">
-                    <a href="./pages/compra.html"><h2>JUGÁ CON LEGENDS</h2></a>
+                    <a href="./pages/productos.html"><h2>JUGÁ CON LEGENDS</h2></a>
                 </div>
             </div>
           <p>Todos jugamos. A nuestro modo. Por nuestras propias razones. Y eso es lo que hace que esta comunidad que construimos juntos sea tan increíble. Más que niveles en los juegos, hay niveles para todos nosotros. Y depende de nosotros adónde vayamos después.</p>
-          
             <div class="box">
-                <img src="./imagenes/mx-mechanical-multi-device.webp" alt="escritorio">
+                <img src="./imagenes/fondohero-desktop.webp" alt="escritorio">
                 <!--CAPA OVERLAY EN LA IMAGEN-->
                 <div class="capa">
-                    <a href="./pages/compra.html"><h2>SIN CABLES - SIN LIMITES</h2></a>
+                    <a href="./pages/productos.html"><h2>SIN CABLES - SIN LIMITES</h2></a>
                 </div>
            
         </section>
@@ -154,13 +153,21 @@
                 <li class="mb-2"><a href="./pages/contacto.html">Contacto</a></li>
               </ul>
             </div>
-            <div class="col-6 col-lg-2 mb-3">
-              <h5>Comunidad</h5>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@">
+           <!--SUSCRIBIRSE-->
+           <div class="col-6 col-lg-6 row-6 mb-3">
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">SUSCRIBRISE</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">email</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
               </div>
-              <button class="btn m-2 " type="submit">suscribirse</button>
+            </div>
+              <div class="col-12 m-2">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
               <div class="d-flex justify-content-center">
                 <a href="https://www.facebook.com/LogitechArgentina" target="_blank"><i class="fa-brands fa-facebook"></a></i>
                 <a href="https://twitter.com/Logitech" target="_blank"><i class="fa-brands fa-twitter"></i></a>

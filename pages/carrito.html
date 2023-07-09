@@ -14,7 +14,7 @@
   <body>
     <header>
        <!--BARRA DE NAVEGACION-->
-       <nav class="navbar navbar-expand-lg">
+       <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars"></i>
@@ -34,7 +34,7 @@
                   <li><a class="dropdown-item" href="./alfombrillas.html">Alfombrillas</a></li>
                   <li><a class="dropdown-item" href="./audio.html">Audio</a></li>
                   <li><a class="dropdown-item" href="./mobiliario.html">Mobiliario</a></li>
-                  <li><a class="dropdown-item" href="./mouse.html">Mouse</a></li>
+                  <li><a class="dropdown-item" href="./ratones.html">Mouse</a></li>
                   <li><a class="dropdown-item" href="./teclados.html">Teclados</a></li>
                 </ul>
               </li>
@@ -43,8 +43,8 @@
               </li>
             </ul>
             <span class="navbar-text">
-              <a href="#"><i class="fa-solid fa-user"></i>Cuenta</a>
-              <a href="./compra.html"><i class="fa-solid fa-cart-shopping"></i>Mi Carrito</a>
+              <a href="./cuenta.html"><i class="fa-solid fa-user"></i>Cuenta</a>
+              <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i>Mi Carrito</a>
             </span>
           </div>
         </div>
@@ -75,13 +75,18 @@
                 <li class="mb-2"><a href="./contacto.html">Contacto</a></li>
               </ul>
             </div>
-            <div class="col-6 col-lg-2 mb-3">
-              <h5>Comunidad</h5>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@">
+            <!--SUSCRIBIRSE-->
+            <div class="col-6 col-lg-6 row-6 mb-3">
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">SUSCRIBRISE</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">email</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
               </div>
-              <button class="btn m-2 " type="submit">suscribirse</button>
               <div class="d-flex justify-content-center">
                 <a href="https://www.facebook.com/LogitechArgentina" target="_blank"><i class="fa-brands fa-facebook"></a></i>
                 <a href="https://twitter.com/Logitech" target="_blank"><i class="fa-brands fa-twitter"></i></a>
