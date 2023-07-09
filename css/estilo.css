@@ -77,6 +77,7 @@ background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, F
     position: relative;
     height: 100%;
     color: #f0f0f0 ;
+    border: #00aade 1px solid;
 
   }
   .container_card img{
@@ -91,7 +92,7 @@ background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, F
     top:50px;
     font-family:monospace;
     font-size: 1.2rem;
-    font-weight: lighter;
+    font-weight:bold;
     text-align: center;
     text-transform:uppercase;
     color: #00aade;
@@ -125,7 +126,6 @@ background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, F
     height: 50%;
     position: relative;
     overflow: hidden;
-    margin: 1.25rem;
     box-shadow: rgba(3, 3, 3, 0.25) 0px 25px 50px -12px;
   }
  
@@ -156,7 +156,7 @@ background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, F
       color: rgb(255, 255, 255);
       text-decoration: none;
   }
-
+ 
 /**********FOOTER*************************/
 .fa-brands{
     font-size: 30px;
