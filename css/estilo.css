@@ -198,11 +198,9 @@ i:hover{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-}
-.main_acce_section{
     padding:50px;
-    color: #0f0f0f;
 }
+
 .main_acce_section h1{
     width: 20%;
     text-align: start;
@@ -370,11 +368,10 @@ i:hover{
     background-image: url("../imagenes/alfombrillas/mousepads-desktop.webp");
     background-size: cover;
     background-position: 50%;
-}
-.main_section_alfombrilla {
     padding:20px;
     color: #fcfcfc;
 }
+
 .main_section_alfombrilla h1{
     width: 20%;
     text-align: start;
@@ -405,10 +402,9 @@ i:hover{
     background-position: 50%;
     width: 100%;
     height: 100%;
-}
-.main_section_audio{
     padding:20px;
 }
+
 .main_section_audio h1{
     width: 20%;
     text-align: start;
@@ -437,10 +433,9 @@ i:hover{
     background-size: cover;
     width: 100%;
     height: 100%;
-}
-.main_section_mobiliario{
     padding:50px;
 }
+
 .main_section_mobiliario h1{
     width: 20%;
     text-align: start;
@@ -469,8 +464,6 @@ i:hover{
     background-size: cover;
     width: 100%;
     height: 100vh;
-}
-.main_section_mouse{
     padding:20px;
 }
 .main_section_mouse h1{
@@ -530,6 +523,64 @@ i:hover{
     .main_section_teclado{
         background-image: url("../imagenes/teclados/portadamobile.webp");
     }
+}
+/************************************/
+/*****PAGES CUENTA ***********/
+/***********************************/
+
+.main_cuenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/cuenta/g203-feature-1-desktop-blue-new.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:90vh;
+}
+.main_cuenta_img{
+    display: flex;
+    justify-content: center;
+}
+.main_cuenta_img img{
+    max-height:30vw ;
+}
+.main_cuenta h1{
+    text-align: center;
+    font-family: "Brown-Pro",Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    font-weight: bold 700;
+    padding:2.5rem;
+    font-size:2rem;
+}
+.main_cuenta_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_cuenta_button button{
+    padding: 20px;
+    margin: 10px;
+    border-radius:5px;
+    border: #00aade 2px solid;
+    background-color: #00aade;
+   
+}
+/*************************************/
+/*******PAGES CARRITO ****************/
+/*************************************/
+.main_carrito{
+    background-image: url("../imagenes/cuenta/carrito.webp");
+    background-size: cover;
+    height: 100vh;
+}
+.main_carrito h1{
+    text-align: center;
+    font-family: "Brown-Pro",Helvetica,Arial,sans-serif;
+    color: #FC00FF;
+    font-weight: bold 700;
+    padding:2.5rem;
+    font-size:2rem;
 }
 
 
