@@ -582,9 +582,57 @@ i:hover{
     padding:2.5rem;
     font-size:2rem;
 }
-
-
-
+/*************************************/
+/*******PAGES CONTACTO****************/
+/*************************************/
+.main_section_contacto{
+    background-image: url("../imagenes/contacto/contact-hero-desktop-3.webp");
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_section_contacto img{
+    max-height:30vw ;
+}
+.main_section_contacto h1{
+    color: #Fff;
+    padding-bottom:60px;
+}
+.flex_contact{
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #2e2e2e;
+    background-color: #fdfdfd;
+}
+.flex_contact h2{
+    width: 20%;
+    margin:5rem;
+    border-bottom: #00aade 3px solid;
+}
+.div_contact{
+    margin:10px;
+    padding: 10px;
+    color:#2e2e2e;
+}
+.div_contact p{
+    font-weight: bold;
+}
+.div_contact li{
+    list-style: none;
+}
+.div_contact a{
+    font-weight: bold;
+    color: #000000;
+}
+.fa-arrow-right-long{
+    font-size: 15px;
+}
 
 
 
