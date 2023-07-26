@@ -1,0 +1,643 @@
+@import "utilidades";
+/***ESTILOS DE INDEX***/
+.body_index {
+    background: #42275a;
+}
+
+/*estilo de icono*******************************/
+.fa-solid {
+    color:$color;
+    margin: .625rem;
+    font-size: .625rem;
+    &:hover {
+        color: #00aade;
+    }
+}
+
+/*ESTILO DE LOGIN*/
+
+.navbar a {
+    text-decoration: none;
+    font-family: monospace;
+    color: #ffffff;
+
+    &:hover {
+        color: #00aade;
+    }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+/*estilo de barra de navegacion***************/
+.navbar-toggler {
+    border: none !important;
+}
+
+/*** footer**********************************/
+.list-unstyled li a {
+    color: #ffffff;
+
+    &:hover {
+        color: #00aade;
+    }
+}
+
+/*estilo main********************************/
+
+.main_section {
+    background-image: url("../imagenes/desktop.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 1.25rem;
+        font-family:$font-principal;
+        color: #fcfdfd;
+    }
+}
+
+/****CARDS***************************/
+.main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 1.2rem;
+}
+
+.container_card {
+    position: relative;
+    height: 100%;
+    color: #f0f0f0;
+    border: #00aade 1px solid;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.container_card h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 3.125rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00aade;
+
+    &:hover {
+        color: #FC00FF;
+    }
+}
+
+.container_card a {
+    text-decoration: none;
+}
+
+/*SECCION TRES*********************/
+.main_seccionTres img {
+    width: 100%;
+}
+
+.main_seccionTres p {
+    width: 50%;
+    color: #fff;
+    top: 50%;
+}
+
+.mainTres_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*CAJA CONTENEDORA DE IMG Y ENLACE*/
+.box {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(3, 3, 3, 0.25) 0px 25px 50px -12px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* EFECTO OVERLAY EN LA IMAGEN*/
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 53, 53, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    transform: scale(0);
+    transition: 0.5s ease;
+}
+
+.box:hover .capa {
+    transform: scale(1);
+}
+
+.capa a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/**********FOOTER*************************/
+.fa-brands {
+    font-size: 1.875rem;
+    padding: .3125rem;
+    color: #00aade;
+}
+
+i:hover {
+    color: #fdfdfd;
+}
+
+/*media query INDEX ***************/
+@media (max-width: 768px) {
+    .main_section {
+        background-image: url("../imagenes/indexmobile.webp");
+        background-size: cover;
+        height: 100vh;
+     p {
+        text-align: center;
+        margin-top: 14rem;
+    }
+}
+
+    .main_section img {
+        display: none;
+    }
+
+    .main_container {
+        flex-wrap: wrap;
+    }
+}
+
+/**************************************/
+/*** PAGES ACCESORIOS *****************/
+/*************************************/
+.main_acce_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/accesorios/fondo-accesorios-desktop.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 3.125rem;
+h1 {
+    width: 20%;
+    text-align: start;
+    font-family:$font-principal;
+    color: #697172;
+    font-weight: bold 700;
+    border-bottom: 3px solid #00aade;
+    padding: 2.5rem;
+}
+ p {
+    padding: 1.875rem 0 0;
+    font-size: 1.25rem;
+    font-family:$font-principal;
+    color: #697172;
+}
+}
+
+/*** media query seccion accesorio******/
+@media (max-width: 768px) {
+    .main_acce_section {
+        background-image: url("../imagenes/accesorios/fondo-accessories-mobile.webp");
+    }
+}
+
+/**********************************************/
+/*** ESTILO DE TODOS LOS PRODUCTOS************/
+/**********************************************/
+.top_products {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Products */
+.container_products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.card_product {
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container_img {
+    position: relative;
+ img {
+    width: 100%;
+}
+ .discount {
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+}
+/***botones redes sociales y compartir*******/
+.button_group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all 0.4s ease;
+ span {
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+ span i {
+    font-size: 1.5rem;
+    color: #00aade;
+}
+}
+
+.button_group span:hover i {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.card_product:hover .button_group {
+    z-index: 0;
+    right: -1rem;
+}
+
+.content_card_product {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 1rem;
+}
+
+/** CONTENEDOR PARA DETALLES DE PRODUCTOS******/
+.details {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.content_card_product h3 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+&:hover {
+    color: var(--primary-color);
+}
+}
+.add_cart {
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/**CONENEDOR DE ICONOS DE CARRITO Y VALOR ***/
+ i {
+    font-size: 1.5rem;
+    color: #050505;
+&:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+ }
+}
+
+.content_card_product .price {
+    justify-self: end;
+    align-self: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/***FIN ESTILO DE PRODUCTOS**************/
+
+/********************************/
+/*** PAGES ALFOMBRILLAS*****/
+.main_section_alfombrilla {
+    background-image: url("../imagenes/alfombrillas/mousepads-desktop.webp");
+    background-size: cover;
+    background-position: 50%;
+    padding: 1.25rem;
+    color: #fcfcfc;
+ h1 {
+    width: 20%;
+    text-align: start;
+    border-bottom: 3px solid #FC00FF;
+    padding: 2.5rem;
+}
+p {
+    font-size: 1.5625rem;
+}
+}
+
+/*****MEDIA QUERY MOBILIARIO*******/
+@media (max-width: 768px) {
+    .main_section_alfombrilla {
+        background-image: url("../imagenes/alfombrillas/mousepads-mobile.webp");
+    }
+}
+/*************************************/
+/**** SECCION AUDIO *****************/
+/***********************************/
+.main_section_audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/audio/audio-desktop-g935.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+h1 {
+    width: 20%;
+    text-align: start;
+    font-family:$font-principal;
+    color: #00aade;
+    font-weight: bold 700;
+    padding: 2.5rem;
+    border-bottom: 3px solid #FC00FF;
+}
+ p {
+    font-family:$font-principal;
+    color: #ffffff;
+}
+}
+
+/*****MEDIA QUERY AUDIO*******/
+@media (max-width: 768px) {
+    .main_section_audio {
+        background-image: url("../imagenes/audio/audio-desktop-g935-mobile.webp");
+    }
+}
+
+/***** PAGES MOBILIARIO**********************/
+.main_section_mobiliario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/mobiliario/uw_cmp_gaming_motia_gaming_bundle.jpg.rendition.1920.1920.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+ h1 {
+    width: 20%;
+    text-align: start;
+    font-family:$font-principal;
+    color: #00aade;
+    border-bottom: 3px solid #ffffff;
+}
+ p {
+    padding: 2.5rem 0 0;
+    font-size: 1.25rem;
+    font-family:$font-principal;
+    color: #fff;
+}
+}
+
+/*****MEDIA QUERY MOBILIARIO*******/
+@media (max-width: 768px) {
+    .main_section_mobiliario {
+        background-image: url("../imagenes/mobiliario/logitech-silla-gamer.jpg");
+    }
+}
+
+/***** PAGES MOUSE **********************/
+.main_section_mouse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/ratones/portadaAudio.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 1.25rem;
+ h1 {
+    width: 20%;
+    text-align: start;
+    font-family:$font-principal;
+    color: #Fff;
+    padding: 2.5rem;
+    border-bottom: 3px solid #00aade;
+ p {
+    font-size: 1.25rem;
+    font-family:$font-principal;
+    color: #fff;
+}
+ }
+}
+
+/*** MEDIA PAGES MOUSE*******/
+@media (max-width: 768px) {
+    .main_section_mouse {
+        background-image: url("../imagenes/ratones/portada-mobile-new.webp");
+    }
+}
+
+/********************************/
+/****PAGES TECLADO **************/
+.main_section_teclado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/teclados/portadaDeskwebp.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 1.25rem;
+ h1 {
+    width: 20%;
+    text-align: start;
+    font-family:$font-principal;
+    color: #Fff;
+    padding: 2.5rem;
+    border-bottom: 3px solid #FC00FF;
+ }
+ p {
+    font-size: 1.25rem;
+    font-family:$font-principal;
+    color: #fff;
+}
+}
+
+.container_teclados {
+    background-image: url("../imagenes/teclados/g713/g713-feature-4-media-tile.png");
+}
+
+/*** MEDIA PAGES TECLADO*******/
+@media (max-width: 768px) {
+    .main_section_teclado {
+        background-image: url("../imagenes/teclados/portadamobile.webp");
+    }
+}
+/************************************/
+/*****PAGES CUENTA ***********/
+/***********************************/
+.main_cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/cuenta/g203-feature-1-desktop-blue-new.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    h1 {
+        text-align: center;
+        font-family:$font-principal;
+        color: #ffffff;
+        font-weight: bold 700;
+        padding: 2.5rem;
+        font-size: 2rem;
+    }
+}
+
+.main_cuenta_img {
+    display: flex;
+    justify-content: center;
+ img {
+    max-height: 30vw;
+}
+}
+
+.main_cuenta_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ button {
+    padding: 1.25rem;
+    margin: .625rem;
+    border-radius: 5px;
+    border: #00aade 2px solid;
+    background-color: #00aade;
+}
+}
+/*************************************/
+/*******PAGES CARRITO ****************/
+/*************************************/
+.main_carrito {
+    background-image: url("../imagenes/cuenta/carrito.webp");
+    background-size: cover;
+    height: 100vh;
+ h1 {
+    text-align: center;
+    font-family:$font-principal;
+    color: #FC00FF;
+    font-weight: bold 700;
+    padding: 2.5rem;
+    font-size: 2rem;
+}
+}
+/*************************************/
+/*******PAGES CONTACTO****************/
+/*************************************/
+.main_section_contacto {
+    background-image: url("../imagenes/contacto/contact-hero-desktop-3.webp");
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ img {
+    max-height: 30vw;
+}
+h1 {
+    color: #Fff;
+    padding-bottom: 3.75rem;
+}
+}
+
+.flex_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #2e2e2e;
+    background-color: #fdfdfd;
+h2 {
+    width: 20%;
+    margin: 5rem;
+    border-bottom: #00aade 3px solid;
+}
+}
+
+.div_contact {
+    margin: .625rem;
+    padding: .625rem;
+    color: #2e2e2e;
+ p {
+    font-weight: bold;
+}
+li {
+    list-style: none;
+}
+a {
+    font-weight: bold;
+    color: #000000;
+}
+}
+
+.fa-arrow-right-long {
+    font-size: .9375rem;
+}
