@@ -6,5 +6,21 @@
 }
 /******VARIABLES***********/
 $color:#ffffff;
+$background-celeste:#00aade;
+$background-body:#42275a;
+$color-hover:#FC00FF;
 $font-principal:"Brown-Pro", Helvetica, Arial, sans-serif;
 
+/***MIXIN*************/
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+@mixin flex-row{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center; 
+}
