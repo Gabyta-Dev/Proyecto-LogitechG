@@ -407,10 +407,11 @@ i:hover {
     color: #Fff;
     padding: 2.5rem;
     border-bottom: 3px solid #00aade; }
-    .main_section_mouse h1 p {
-      font-size: 1.25rem;
-      font-family: "Brown-Pro", Helvetica, Arial, sans-serif;
-      color: #fff; }
+
+.main_section_mouse p {
+  font-size: 1.25rem;
+  font-family: "Brown-Pro", Helvetica, Arial, sans-serif;
+  color: #fff; }
 
 /*** MEDIA PAGES MOUSE*******/
 @media (max-width: 768px) {

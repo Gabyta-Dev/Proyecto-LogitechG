@@ -469,13 +469,15 @@ h1 {
     color: #Fff;
     padding: 2.5rem;
     border-bottom: 3px solid #00aade;
- p {
+ }
+}
+.main_section_mouse p {
     font-size: 1.25rem;
     font-family:$font-principal;
     color: #fff;
 }
- }
-}
+ 
+
 
 /*** MEDIA PAGES MOUSE*******/
 @media (max-width: 768px) {
